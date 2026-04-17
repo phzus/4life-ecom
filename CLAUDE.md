@@ -11,7 +11,7 @@ E-commerce custom para **4Life Nutrition** (suplementos alimentares), migrando d
 - **Banco de Dados:** PostgreSQL (padrão Medusa)
 - **Admin:** Medusa Admin (built-in) + extensões custom (blog, banners)
 - **Automações:** N8N (WhatsApp notifications via webhooks Medusa)
-- **Tipografia:** Hanken Grotesk (primária) + Inter (secundária)
+- **Tipografia:** Hanken Grotesk (primária) + Plus Jakarta Sans (secundária)
 - **Ícones:** Lucide Icons (SVG, consistente, sem emojis como ícones)
 - **Pagamento:** Stripe (provável, a confirmar)
 - **Frete:** Integração por CEP com transportadoras
@@ -31,10 +31,10 @@ E-commerce custom para **4Life Nutrition** (suplementos alimentares), migrando d
 
 ### Tipografia
 - **Primária:** Hanken Grotesk (todos os pesos: 300-900) — headings, body, UI
-- **Secundária:** Inter — texto funcional, labels, dados, admin-like contexts
+- **Secundária:** Plus Jakarta Sans — texto funcional, labels, dados, admin-like contexts
 - **Headings:** Hanken Grotesk Bold/SemiBold
 - **Body:** Hanken Grotesk Regular (16px base)
-- **Captions/Labels:** Inter Medium ou Hanken Grotesk Medium
+- **Captions/Labels:** Plus Jakarta Sans Medium ou Hanken Grotesk Medium
 
 ### Logo
 - Versões disponíveis: completa (com/sem box), símbolo (com/sem box)
@@ -67,6 +67,33 @@ E-commerce custom para **4Life Nutrition** (suplementos alimentares), migrando d
 - Focus states visíveis para navegação por teclado
 - Sem emojis como ícones — usar Lucide Icons (SVG)
 - Hover states sem layout shift (usar opacity/color, não scale que desloca)
+
+## Infraestrutura (Medusa Admin)
+
+**Admin URL:** https://4life-admin.byvot.com/app
+**API URL:** https://4life-api.byvot.com
+**Admin login:** `admin@4lifenutrition.com.br` / `4LifeAdmin2026!`
+**Publishable key:** `pk_09e2e1772b473eeba8a8996ba92c22de98c05dd57506a567289ff8917404879b`
+
+### Collections (Objetivos)
+- Energia & Performance
+- Força & Massa Muscular
+- Sono & Recuperação
+- Saúde & Longevidade
+
+### Product Categories (Tipos)
+Proteínas, Creatina, Vitaminas e Minerais, Pré-treinos, Glutamina, Sono & Reparo, Termogênicos, Kits, Essenciais 4Life
+
+### Product Tags (Badges)
+Mais Vendido, Novo, Essencial 4Life, Lançamento, Esgotado em Breve
+
+### Shipping
+- Stock Location: 4Life Nutrition - Guarapari (ES)
+- Envio Padrão: R$ 25
+- Frete Grátis: >= R$ 299 (automático)
+
+### Widget Custom
+Extensão admin em `src/admin/widgets/product-4life-info.tsx` renderiza campos amigáveis para `metadata.how_to_use` e `metadata.nutritional_info` na tela de produto.
 
 ## Informações Comerciais
 - **Frete grátis:** A partir de R$ 299

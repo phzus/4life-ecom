@@ -151,11 +151,13 @@ xl:  1440px (desktop wide)
 
 ---
 
-## Decisão #8: Fonte Secundária — Inter
-**Data:** 2026-04-16
+## Decisão #8: Fonte Secundária — Plus Jakarta Sans
+**Data:** 2026-04-16 (revisada em 2026-04-17)
 **Status:** Definido
 
-Inter como fonte secundária para contextos funcionais (labels de dados, tabelas, preços, inputs). Hanken Grotesk continua como primária para headings, body e UI principal. Hector Modern Sans Serif descartada.
+Plus Jakarta Sans como fonte secundária para contextos complementares (labels, metadata, preços, dados em tabelas, captions). Hanken Grotesk continua como primária para headings, body e UI principal. Hector Modern Sans Serif descartada.
+
+**Por que trocou (Inter → Plus Jakarta Sans):** Inter e Hanken Grotesk são muito similares visualmente (ambas sans-serif geométricas neutras), criando redundância sem hierarquia. Plus Jakarta Sans tem personalidade mais distinta — curvas mais abertas e humanas — gerando contraste real com o Hanken, sem quebrar a estética.
 
 ---
 
@@ -304,9 +306,66 @@ Zero extensões custom. Zero campos editoriais artesanais. Tudo roda com o Medus
 
 ---
 
+## Decisão #16: Homepage — Reduzida para 12 Seções
+**Data:** 2026-04-17
+**Status:** Definido (validado pelo cliente)
+
+Após validação das 14 seções com o cliente, removidas 2 seções redundantes:
+
+- **Removida: Trust Bar** — Condições comerciais (frete R$299, 12x) já ficam na announcement bar no topo. Repetir como régua de confiança logo após o hero era redundante.
+- **Removida: Newsletter como seção isolada** — Movida para integração inline no footer. Seção dedicada quebrava o ritmo editorial e competia com o manifesto final.
+
+**Nova ordem (12 seções):** Announcement Bar → Header → Hero → Categorias → Mais Vendidos → Shop by Goal → Product Highlight → Social Proof → Blog Preview → CTA Revendedor → Manifesto Final → Footer (com newsletter).
+
+**Racional:** O manifesto vira o último bloco de conteúdo, fechando a página emocionalmente com o slogan "Your Health, Our Mission." antes da parte prática do footer. Padrão editorial clean (Sult, Essential).
+
+---
+
+## Decisão #18: Footer com Assinatura Tipográfica (ref Cleaning)
+**Data:** 2026-04-17
+**Status:** Definido
+
+Footer da 4Life inspirado na ref Cleaning, com 3 camadas verticais:
+
+1. **Institucional + Newsletter** (camada funcional):
+   - Logo 4Life + frase breve institucional (ex: "Suplementação nutricional brasileira desenvolvida com ciência aplicada e padrão ISO 9001")
+   - Colunas: Objetivos | Categorias | Institucional | Atendimento
+   - Newsletter inline ("Receba ofertas exclusivas e novidades" + email + botão)
+   - Redes sociais (@4lifenutrition_)
+
+2. **Assinatura Tipográfica** (elemento gráfico):
+   - "4LIFE NUTRITION" em tipografia display gigante
+   - Ponta a ponta da tela
+   - Efeito fade (gradient mask nas extremidades/base)
+   - É elemento visual, não leitura — assinatura da marca
+
+3. **Bottom bar** (legal):
+   - Copyright, CNPJ, endereço completo
+   - Ícones de formas de pagamento
+   - Links: Privacidade · Termos · Cookies
+
+**Paleta:** Background `#412E28` (marrom), texto `#ECE0D0` (bege).
+
+**Nota:** Footer NÃO substitui o manifesto (seção #11). Manifesto carrega a **mensagem** da marca ("Your Health, Our Mission."), footer carrega a **assinatura visual** ("4Life Nutrition" display). São funções complementares, não redundantes.
+
+---
+
+## Decisão #17: Shipping — Flat fee até migração para Melhor Envio
+**Data:** 2026-04-17
+**Status:** Provisório
+
+Shipping atual: "Envio Padrão" R$25 + "Frete Grátis" acima de R$299 (flat fee manual).
+
+Na fase final, migrar para integração **Melhor Envio** (mesma abordagem do projeto underground com Superfrete). Requer conta comercial no Melhor Envio, a ser configurada com o cliente.
+
+**How to apply:** Não investir tempo em refinar shipping options manuais — elas serão descartadas na migração.
+
+---
+
 ## Decisões Pendentes
 
 - [ ] Gateway de pagamento — provável Stripe, a confirmar
 - [ ] Care Club — aguardando briefing do cliente (`docs/BRIEFING-CLIENTE.md`)
 - [ ] Signature — mecânica de assinatura (briefing enviado, aguardando retorno)
 - [ ] Referência visual de header/navegação — componente crítico ainda sem ref visual
+- [ ] Conta Melhor Envio — necessária para migração do shipping

@@ -44,6 +44,22 @@ Organizadas por tipo de página. Cada imagem é uma referência visual para desi
 
 ---
 
+## /footer/ — Referências de Footer
+
+3 refs analisadas (imagens enviadas pelo Pedro em 2026-04-17):
+
+| Ref | O que absorver |
+|-----|----------------|
+| **Tea Circle** (verde wellness) | Slogan à esquerda + newsletter inline, colunas clean |
+| **Slice of Heaven** (vinho escuro) | Slogan em tipografia GIGANTE ocupando metade do footer, newsletter abaixo |
+| **Cleaning** (azul marinho) | Nome da marca em tipografia display enorme na base do footer, nav + newsletter + contato em camadas acima |
+
+**Padrão comum:** Fundo escuro + newsletter integrada + tipografia display grande como elemento estrutural.
+
+**Decisão:** Footer da 4Life absorve a função do manifesto — "Your Health, Our Mission." em tipografia display gigante ocupa a base do footer. Background `#412E28` (marrom), texto `#ECE0D0` (bege). Ref principal: Cleaning (estrutura) + Sult (refinamento editorial).
+
+---
+
 ## Referência Adicional: PDP Landing Page (Viva True)
 
 A PDP da Viva True (True Omega 3) segue um formato landing page:

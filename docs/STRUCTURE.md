@@ -6,7 +6,7 @@ Este documento define a "planta baixa" de cada página: quais seções existem, 
 
 ## Homepage — Seções e Ordem
 
-A estrutura foi sintetizada a partir das 5 referências analisadas, calibrada para o posicionamento premium/orgânico da 4Life e o contexto real da marca (catálogo médio, marca em crescimento, público health/wellness).
+12 seções. Estrutura sintetizada a partir das referências analisadas, calibrada para o posicionamento premium/orgânico da 4Life e o contexto real da marca (catálogo médio, marca em crescimento, público health/wellness). Condições comerciais (frete grátis, parcelamento) ficam na announcement bar; newsletter fica integrada ao footer — sem seções isoladas quebrando o ritmo editorial.
 
 ### Seção 1: Announcement Bar
 - **O que:** Barra fina no topo com promo ou informação de frete
@@ -29,78 +29,102 @@ A estrutura foi sintetizada a partir das 5 referências analisadas, calibrada pa
 - **Ref:** Sult (editorial, whitespace), Viva True (lifestyle imagery)
 - **Razão:** Primeira impressão = identidade da marca. Não vender produto aqui, vender o estilo de vida.
 
-### Seção 4: Trust Bar / Régua de Confiança
-- **O que:** Faixa horizontal com 3-4 badges/ícones
-- **Conteúdo:** Frete Grátis acima de X | Parcele em 12x | Qualidade Garantida | Entrega Rápida
-- **Ref:** Pharmax, NutriGo, Essential
-- **Razão:** Reduz atrito de compra imediatamente após o hero. Padrão presente em TODAS as refs analisadas.
-
-### Seção 5: Navegação por Categorias (Visual)
+### Seção 4: Navegação por Categorias (Visual)
 - **O que:** Grid/fileira de ícones com fotos dos produtos reais para navegação rápida
 - **Conteúdo:** Proteínas | Creatina | Vitaminas | Pré-treinos | Glutamina | Sono | Termogênicos | Kits
 - **Layout:** Scroll horizontal mobile, grid desktop
 - **Ref:** Viva True (ícones circulares), Essential (barra de tags), Pharmax (fotos de frascos)
 - **Razão:** Atalho visual que acelera o Time to Interactive. Usar fotos reais dos frascos (Pharmax) — mais efetivo que ícones genéricos.
 
-### Seção 6: Produtos em Destaque / Mais Vendidos
+### Seção 5: Produtos em Destaque / Mais Vendidos
 - **O que:** Grid de 4-8 product cards com ação rápida
 - **Card inclui:** Foto, nome, preço, parcelamento, rating (futuro), botão "Adicionar"
 - **Layout:** Grid 4 colunas desktop, 2 mobile com scroll horizontal
 - **Ref:** NutriGo (card funcional com add to cart), Essential (vitrine "Em Alta")
 - **Razão:** Coloca produtos na frente do usuário cedo. Cards funcionais reduzem cliques até o checkout.
 
-### Seção 7: Shop by Goal (Compre por Objetivo)
+### Seção 6: Shop by Goal (Compre por Objetivo)
 - **O que:** Grid visual com 4 blocos — cada um um objetivo
 - **Conteúdo:** Energia & Performance | Força & Massa Muscular | Sono & Recuperação | Saúde & Longevidade
 - **Layout:** 4 cards com imagem lifestyle + título + CTA
 - **Ref:** NutriGo (Shop by Goal grid), LiveGood (Shop by Goal), Essential (Menu de Objetivos)
 - **Razão:** Segmentação por intenção de uso é o padrão mais forte do nicho. Usuário que não sabe o produto sabe o objetivo.
 
-### Seção 8: Product Highlight (Destaque de Produto)
+### Seção 7: Product Highlight (Destaque de Produto)
 - **O que:** Bloco dividido (imagem + texto) destacando um produto específico
 - **Conteúdo:** Foto lifestyle/produto + título + lista de benefícios (bullets) + CTA
 - **Rotativo:** Pode mudar conforme promo/lançamento
 - **Ref:** LiveGood (bloco dividido texto/imagem), Pharmax (destaque com bullets)
 - **Razão:** Interrupção estratégica no scroll. Educa sobre produto específico sem exigir clique.
 
-### Seção 9: Social Proof / Autoridade
+### Seção 8: Social Proof / Autoridade
 - **O que:** Bloco de validação social
 - **Conteúdo — Fase 1:** Depoimentos em texto + rating (pode ser do Google/Instagram)
 - **Conteúdo — Fase futura:** Fotos UGC, vídeos de clientes, bloco de influenciadores
 - **Ref:** Viva True (influenciadores), NutriGo (UGC carousel), Sult (headline quantitativa)
 - **Razão:** Social proof é o motor de conversão #1 no nicho. Começar simples e expandir conforme a marca cresce.
 
-### Seção 10: Blog Preview
+### Seção 9: Blog Preview
 - **O que:** Grid com 2-3 cards de posts recentes do blog
 - **Conteúdo:** Imagem + título + resumo + data + CTA "Leia mais"
 - **Header:** Copy editorial (ex: "Conteúdo para quem leva saúde a sério") + botão "Ver todos os posts"
 - **Ref:** LiveGood (Blog Grid 4 colunas), Pharmax (conteúdo educativo)
 - **Razão:** SEO, autoridade educativa, motivo para retorno. A 4Life já comunica foco em conteúdo educativo contínuo.
 
-### Seção 11: Seja um Revendedor (CTA B2B)
+### Seção 10: Seja um Revendedor (CTA B2B)
 - **O que:** Banner/bloco com CTA direcionando para a landing page de revendedores
 - **Conteúdo:** "Seja um parceiro 4Life" / "Construa com a gente" + texto curto sobre diferenciais + botão "Saiba mais"
 - **Visual:** Bloco com fundo `#412E28` (marrom) + texto `#ECE0D0` (bege), contraste forte com o resto da página
 - **Razão:** A 4Life tem estratégia B2B matura com proposta comercial completa. Captura interesse de lojistas/profissionais que visitam o site consumer-facing.
 
-### Seção 12: Sobre a Marca (Mini Manifesto)
-- **O que:** Bloco compacto com proposta de valor / manifesto
-- **Conteúdo:** "Your Health, Our Mission." + texto curto sobre ciência, propósito e qualidade + link "Conheça a 4Life"
-- **Visual:** Tipografia grande, editorial (inspirado em Sult), muito whitespace
-- **Ref:** Sult (bloco de manifesto com tipografia grande), Essential (manifesto/rodapé)
-- **Razão:** Constrói conexão emocional. Tom: confiante, educativo, sem hype.
+### Seção 11: Manifesto Final (Sobre a Marca)
+- **O que:** Bloco de fechamento emocional antes do footer — última mensagem antes do usuário sair
+- **Conteúdo:** "Your Health, Our Mission." como título grande + texto curto sobre ciência, propósito e qualidade + link "Conheça a 4Life"
+- **Visual:** Tipografia muito grande (display), editorial (inspirado em Sult), whitespace generoso, background `#ECE0D0` ou `#FAFAF8`
+- **Ref:** Sult (bloco de manifesto tipográfico), Essential (manifesto/rodapé)
+- **Razão:** Fecha a página emocionalmente, ancorando o slogan da marca antes da parte prática (footer). Deixa uma impressão final forte independente do caminho que o usuário percorreu.
 
-### Seção 13: Newsletter / Lead Capture
-- **O que:** Barra de captura de email
-- **Conteúdo:** "Receba ofertas exclusivas e novidades" + input email + botão
-- **Incentivo:** 10% OFF na primeira compra (a validar com cliente)
-- **Ref:** NutriGo (lead magnet com 20% OFF), LiveGood (newsletter no footer)
+### Seção 12: Footer
+- **O que:** Rodapé completo com newsletter integrada e assinatura tipográfica da marca
+- **Background:** `#412E28` (marrom primário) | **Texto:** `#ECE0D0` (bege)
+- **Ref principal:** Cleaning (nome da marca em tipografia display na base, ponta a ponta)
 
-### Seção 14: Footer
-- **O que:** Rodapé completo
-- **Conteúdo:** Logo, navegação secundária, categorias, institucional, redes sociais, selos de segurança, formas de pagamento, CNPJ
-- **Ref:** Todas as refs possuem footer hierárquico completo
-- **Razão:** SEO + usuários que chegaram ao fim sem clicar precisam de saída secundária
+**Layout em 3 camadas verticais:**
+
+**Camada 1 — Institucional + Newsletter**
+```
+┌──────────────────────────────────────────────────────────────┐
+│ [Logo 4Life]         Objetivos    Categorias    Institucional │
+│ Frase breve          Energia      Proteínas     Sobre         │
+│ institucional        Força        Creatina      Blog          │
+│ sobre a marca        Sono         Vitaminas     Contato       │
+│                      Saúde        Pré-treinos   Seja Revend.  │
+│                                   ...                         │
+│                                                               │
+│ Atendimento          Newsletter                               │
+│ FAQ                  "Receba ofertas exclusivas e novidades"  │
+│ Trocas & Devoluções  [email input]           [Inscrever]      │
+│ Frete                                                         │
+│ Políticas            @4lifenutrition_  [instagram]            │
+└──────────────────────────────────────────────────────────────┘
+```
+
+**Camada 2 — Assinatura Tipográfica (ref Cleaning)**
+- Texto "4LIFE NUTRITION" em tipografia display gigante
+- Ocupa a largura total da tela (ponta a ponta)
+- **Efeito fade:** gradient mask reduzindo opacity nas extremidades ou no rodapé (texto parece "mergulhar" no background)
+- Função: assinatura visual da marca, não leitura — é elemento gráfico
+
+**Camada 3 — Legal/Bottom Bar**
+- Copyright "© 2026 4Life Nutrition · CNPJ: 27.699.666/0001-36"
+- Endereço: Av. Davino Mattos, 417 - 2º Andar, Centro · Guarapari - ES · CEP 29200-480
+- Formas de pagamento (ícones de bandeiras)
+- Políticas: Privacidade · Termos · Cookies
+
+**Frase institucional breve (placeholder — validar com cliente):**
+> "Suplementação nutricional brasileira desenvolvida com ciência aplicada e padrão ISO 9001."
+
+**Razão:** Footer vira a assinatura visual da marca. A tipografia gigante com fade é elemento gráfico (ref Cleaning) que dá peso e personalidade ao fechamento da página — complementa (não substitui) o manifesto da seção #11 que carrega a **mensagem**.
 
 ---
 
