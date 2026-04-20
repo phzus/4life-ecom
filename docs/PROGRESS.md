@@ -163,3 +163,16 @@ Criar registros A em byvot.com apontando para 187.77.233.97:
 - Homepage orquestra as 9 seções de conteúdo (1=announcement e 2=header já no layout global, 12=footer no layout global)
 - next.config.js: adicionados domínios `4life-admin.byvot.com` e `4life-api.byvot.com` no remotePatterns de image
 - `suppressHydrationWarning` no `<html>` para neutralizar interferência de extensões de browser (Grammarly, LanguageTool)
+
+### 19-20/04/2026 — Deploy Vercel + Customização Admin Medusa
+- Configuração CORS do Medusa atualizada para incluir padrões regex dos domínios Vercel (`4life-ecom-*.vercel.app` e `*-phzus-*.vercel.app`)
+- `vercel.json` criado com framework nextjs explícito + `packageManager` trocado de `yarn@4.12.0` para `bun@1.3.6` (removendo conflito de detecção)
+- `DEFAULT_REGION` fallback mudado de `"us"` para `"br"` no middleware (4Life é marca brasileira)
+- Metadata SEO do root layout expandida: Open Graph, Twitter cards, keywords, title template
+- Storefront no ar em https://4lifenutrition.vercel.app e https://new.4lifenutrition.com.br
+
+### 20/04/2026 — Customização mínima do admin Medusa (Decisão #19)
+- Componente `<ThemeOverride />` em `src/admin/lib/theme-override.tsx` injeta CSS via `useEffect`
+- 3 widgets em zonas `product.list.before`, `order.list.before`, `customer.list.before` carregam o componente
+- CSS sobrescreve apenas CSS variables: fundo cinza escuro → marrom da marca, texto branco → bege, accent azul → verde da marca
+- Logo 4Life no admin adiada (risco alto de quebrar em updates)

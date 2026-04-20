@@ -362,6 +362,34 @@ Na fase final, migrar para integração **Melhor Envio** (mesma abordagem do pro
 
 ---
 
+## Decisão #19: Admin Medusa com Identidade Mínima
+**Data:** 2026-04-20
+**Status:** Definido
+
+Customização mínima do admin Medusa para aproximar da identidade 4Life sem criar dor de manutenção.
+
+**O que foi feito:**
+- Componente `<ThemeOverride />` (em `src/admin/lib/theme-override.tsx`) injeta `<style>` no `<head>` via `useEffect`
+- 3 widgets leves em zonas `product.list.before`, `order.list.before`, `customer.list.before` que só renderizam o componente
+- CSS sobrescreve apenas **CSS variables** do Medusa UI (`--bg-base`, `--fg-base`, `--bg-interactive`, etc) — não toca em selectors, classes ou layout
+- Dark mode (`html.dark`): fundo de cinza escuro → marrom da marca (`#2A1C17` base, `#3A2A23` componentes), texto branco → bege (`#ECE0D0`), accent azul → verde da marca (`#6A714E`)
+
+**Por que essa abordagem:**
+- Zero modificação no core do Medusa
+- Se uma versão futura renomear as CSS vars, apenas o visual volta ao default — funcionalidade intacta
+- Estilo é aplicado assim que a primeira listagem carrega (produtos/pedidos/clientes) e persiste pelo resto da sessão
+
+**O que NÃO foi feito (deliberadamente):**
+- **Logo 4Life no admin** — a logo do Medusa é SVG inline dentro dos chunks JS buildados, não é asset separado. Trocar exige CSS seletor frágil + hack de background-image. Baixo valor visual × alto risco de quebrar em updates. Pode revisitar no futuro se necessário.
+- Tipografia, espaçamentos, layouts — qualquer mudança aqui quebra algum flow
+
+**Precauções de manutenção:**
+- Pinar versão Medusa `2.13.6` e testar tema antes de atualizar
+- Se atualizar, inspecionar CSS vars compiladas (`/app/server/public/admin/assets/*.css`) pra ver se os nomes mudaram
+- Se quebrar: apenas remover os 3 widgets e o componente — admin volta ao default
+
+---
+
 ## Decisões Pendentes
 
 - [ ] Gateway de pagamento — provável Stripe, a confirmar
@@ -369,3 +397,4 @@ Na fase final, migrar para integração **Melhor Envio** (mesma abordagem do pro
 - [ ] Signature — mecânica de assinatura (briefing enviado, aguardando retorno)
 - [ ] Referência visual de header/navegação — componente crítico ainda sem ref visual
 - [ ] Conta Melhor Envio — necessária para migração do shipping
+- [ ] Logo 4Life no admin Medusa — adiado (ver Decisão #19)
