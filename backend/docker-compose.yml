@@ -1,0 +1,67 @@
+services:
+  fl-postgres:
+    image: postgres:16-alpine
+    container_name: fl-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: medusa
+      POSTGRES_USER: medusa
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - fl_pg_data:/var/lib/postgresql/data
+    networks:
+      - fl_internal
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U medusa -d medusa"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  fl-redis:
+    image: redis:7-alpine
+    container_name: fl-redis
+    restart: unless-stopped
+    command: redis-server --maxmemory 128mb --maxmemory-policy allkeys-lru
+    volumes:
+      - fl_redis_data:/data
+    networks:
+      - fl_internal
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  fl-medusa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fl-medusa
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9000:9000"
+    depends_on:
+      fl-postgres:
+        condition: service_healthy
+      fl-redis:
+        condition: service_healthy
+    env_file:
+      - .env.production
+    environment:
+      BACKEND_URL: https://4life-admin.byvot.com
+    volumes:
+      - fl_static:/app/server/static
+    networks:
+      - fl_internal
+      - proxy
+
+volumes:
+  fl_pg_data:
+  fl_redis_data:
+  fl_static:
+
+networks:
+  fl_internal:
+    driver: bridge
+  proxy:
+    external: true

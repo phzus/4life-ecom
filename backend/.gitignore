@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+.medusa/
+dist/
+
+# Environment files (contain secrets)
+.env
+.env.production
+.env.production.bak-*
+
+# Runtime static assets (uploads)
+static/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
